@@ -58,3 +58,7 @@ Adjunto video de la explicacion del reto tecnico.
 
 https://drive.google.com/drive/folders/1urlYerrvfgL3AIs0kPzJDP5ooCxXfQk0?usp=sharing
 
+Imagen del modelo de datos
+![modelo_datos](https://github.com/user-attachments/assets/e483161b-e6ba-407a-ad43-2aad28bf4d5e)
+
+
