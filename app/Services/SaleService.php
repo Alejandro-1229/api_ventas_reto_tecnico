@@ -13,10 +13,9 @@ class SaleService
 
 
     public function createSale(array $data){
+        
         $venta = $this->saleInterface->createSale($data);
 
-        // Enviar correo en segundo plano
-        //dispatch(new EnviarCorreoVentaJob($venta));
         return $venta;
     }
 

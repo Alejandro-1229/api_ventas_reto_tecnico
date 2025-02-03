@@ -14,16 +14,14 @@ class CheckRole
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    public function handle(Request $request, Closure $next, ...$roles): Response
-    { 
+    public function handle(Request $request, Closure $next): Response
+    {
 
-            $user = Auth::user();
-            $roleIds = array_map('intval', $roles);
-            if (!in_array($user->role_id, $roleIds)) {
-                return response()->json(['error' => 'No tienes permiso para acceder a esta ruta.'], 403);
-            }
+        $user = Auth::user();
+        if ($user->role_id != 1) {
+            return response()->json(['error' => 'No tienes permiso para acceder a esta ruta.'], 403);
+        }
 
-            return $next($request);
-        
+        return $next($request);
     }
 }
