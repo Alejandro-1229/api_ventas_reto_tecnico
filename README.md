@@ -54,5 +54,7 @@ php artisan serve
 ```  
 Abre en el navegador: [http://127.0.0.1:8000](http://127.0.0.1:8000)  
 
+Adjunto video de la explicacion del reto tecnico.
 
+https://drive.google.com/drive/folders/1urlYerrvfgL3AIs0kPzJDP5ooCxXfQk0?usp=sharing
 
